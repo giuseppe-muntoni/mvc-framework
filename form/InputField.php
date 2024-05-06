@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core\form;
+namespace giuseppemuntoni\mvc\form;
 
 
-use app\core\Model;
+use giuseppemuntoni\mvc\Model;
 
 /**
  * Class Field
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\form
+ * @package giuseppemuntoni\mvc\form
  */
 class InputField extends BaseField
 {

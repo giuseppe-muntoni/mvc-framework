@@ -1,13 +1,13 @@
 <?php
 
-namespace app\core\exception;
+namespace giuseppemuntoni\mvc\exception;
 
 
 /**
  * Class NotFoundException
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\exception
+ * @package giuseppemuntoni\mvc\exception
  */
 class NotFoundException extends \Exception
 {

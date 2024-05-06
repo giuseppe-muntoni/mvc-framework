@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core;
+namespace giuseppemuntoni\mvc;
 
 
-use app\core\validation\Rule;
+use giuseppemuntoni\mvc\validation\Rule;
 
 /**
  * Class Model
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core
+ * @package giuseppemuntoni\mvc
  */
 abstract class Model
 {

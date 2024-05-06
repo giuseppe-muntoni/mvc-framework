@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core;
+namespace giuseppemuntoni\mvc;
 
 
-use app\core\exception\NotFoundException;
+use giuseppemuntoni\mvc\exception\NotFoundException;
 
 /**
  * Class Router
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core
+ * @package giuseppemuntoni\mvc
  */
 class Router
 {

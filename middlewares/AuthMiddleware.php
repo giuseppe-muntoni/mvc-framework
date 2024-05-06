@@ -1,17 +1,17 @@
 <?php
 
-namespace app\core\middlewares;
+namespace giuseppemuntoni\mvc\middlewares;
 
 
-use app\core\Application;
-use app\core\exception\ForbiddenException;
-use app\core\middlewares\BaseMiddleware;
+use giuseppemuntoni\mvc\Application;
+use giuseppemuntoni\mvc\exception\ForbiddenException;
+use giuseppemuntoni\mvc\middlewares\BaseMiddleware;
 
 /**
  * Class AuthMiddleware
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\middlewares
+ * @package giuseppemuntoni\mvc\middlewares
  */
 class AuthMiddleware extends BaseMiddleware
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core\validation;
+namespace giuseppemuntoni\mvc\validation;
 
 
-use app\core\Application;
+use giuseppemuntoni\mvc\Application;
 
 /**
  * Class UniqueRule
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\validation
+ * @package giuseppemuntoni\mvc\validation
  */
 class UniqueRule extends Rule
 {

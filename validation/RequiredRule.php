@@ -1,13 +1,13 @@
 <?php
 
-namespace app\core\validation;
+namespace giuseppemuntoni\mvc\validation;
 
 
 /**
  * Class RequiredRule
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\validation
+ * @package giuseppemuntoni\mvc\validation
  */
 class RequiredRule extends Rule
 {

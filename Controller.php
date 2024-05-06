@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core;
+namespace giuseppemuntoni\mvc;
 
 
-use app\core\middlewares\BaseMiddleware;
+use giuseppemuntoni\mvc\middlewares\BaseMiddleware;
 
 /**
  * Class Controller
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core
+ * @package giuseppemuntoni\mvc
  */
 class Controller
 {

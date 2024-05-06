@@ -7,5 +7,10 @@
             "email": "g.muntoni.cs@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "giuseppemuntoni\\mvc\\": "./"
+        }
+    }
 }

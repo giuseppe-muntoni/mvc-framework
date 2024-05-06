@@ -1,13 +1,13 @@
 <?php
 
-namespace app\core\exception;
+namespace giuseppemuntoni\mvc\exception;
 
 
 /**
  * Class ForbiddenException
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\exception
+ * @package giuseppemuntoni\mvc\exception
  */
 class ForbiddenException extends \Exception
 {

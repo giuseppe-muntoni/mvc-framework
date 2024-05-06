@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core\form;
+namespace giuseppemuntoni\mvc\form;
 
 
-use app\core\form\BaseField;
+use giuseppemuntoni\mvc\form\BaseField;
 
 /**
  * Class TextAreaField
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\form
+ * @package giuseppemuntoni\mvc\form
  */
 class TextAreaField extends BaseField
 {

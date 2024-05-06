@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core\db;
+namespace giuseppemuntoni\mvc\db;
 
-use app\core\Application;
+use giuseppemuntoni\mvc\Application;
 use PDO;
 
 /**
  * Class database
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core
+ * @package giuseppemuntoni\mvc
  */
 class Database
 {

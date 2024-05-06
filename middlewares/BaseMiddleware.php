@@ -1,13 +1,13 @@
 <?php
 
-namespace app\core\middlewares;
+namespace giuseppemuntoni\mvc\middlewares;
 
 
 /**
  * Class BaseMiddleware
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\middlewares
+ * @package giuseppemuntoni\mvc\middlewares
  */
 abstract class BaseMiddleware
 {

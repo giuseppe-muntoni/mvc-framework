@@ -1,13 +1,13 @@
 <?php
 
-namespace app\core;
+namespace giuseppemuntoni\mvc;
 
 
 /**
  * Class Response
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core
+ * @package giuseppemuntoni\mvc
  */
 class Response
 {

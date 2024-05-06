@@ -1,16 +1,16 @@
 <?php
 
-namespace app\core\db;
+namespace giuseppemuntoni\mvc\db;
 
 
-use app\core\Application;
-use app\core\Model;
+use giuseppemuntoni\mvc\Application;
+use giuseppemuntoni\mvc\Model;
 
 /**
  * Class DbModel
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\db
+ * @package giuseppemuntoni\mvc\db
  */
 abstract class DbModel extends Model
 {

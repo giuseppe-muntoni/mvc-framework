@@ -1,16 +1,16 @@
 <?php
 
-namespace app\core;
+namespace giuseppemuntoni\mvc;
 
 
-use app\core\db\Database;
-use app\core\db\DbModel;
+use giuseppemuntoni\mvc\db\Database;
+use giuseppemuntoni\mvc\db\DbModel;
 
 /**
  * Class Application
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core
+ * @package giuseppemuntoni\mvc
  */
 class Application
 {

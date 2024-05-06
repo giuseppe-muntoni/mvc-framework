@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core\validation;
+namespace giuseppemuntoni\mvc\validation;
 
 
-use app\core\validation\Rule;
+use giuseppemuntoni\mvc\validation\Rule;
 
 /**
  * Class MatchRule
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\validation
+ * @package giuseppemuntoni\mvc\validation
  */
 class MatchRule extends Rule
 {

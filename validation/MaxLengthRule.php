@@ -1,13 +1,13 @@
 <?php
 
-namespace app\core\validation;
+namespace giuseppemuntoni\mvc\validation;
 
 
 /**
  * Class MaxLengthRule
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package app\core\validation
+ * @package giuseppemuntoni\mvc\validation
  */
 class MaxLengthRule extends Rule
 {
