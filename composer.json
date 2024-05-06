@@ -1,0 +1,11 @@
+{
+    "name": "giuseppe-muntoni/mvc-framework",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Giuseppe Muntoni",
+            "email": "g.muntoni.cs@gmail.com"
+        }
+    ],
+    "require": {}
+}
