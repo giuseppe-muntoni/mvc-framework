@@ -1,6 +1,6 @@
 <?php
 
-namespace giuseppemuntoni\mvc\form;
+namespace giuseppemuntoni\mvc\components\form;
 
 
 use giuseppemuntoni\mvc\form\BaseField;
@@ -9,7 +9,7 @@ use giuseppemuntoni\mvc\form\BaseField;
  * Class TextAreaField
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package giuseppemuntoni\mvc\form
+ * @package giuseppemuntoni\mvc\components\form
  */
 class TextAreaField extends BaseField
 {

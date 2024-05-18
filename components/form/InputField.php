@@ -1,6 +1,6 @@
 <?php
 
-namespace giuseppemuntoni\mvc\form;
+namespace giuseppemuntoni\mvc\components\form;
 
 
 use giuseppemuntoni\mvc\Model;
@@ -9,7 +9,7 @@ use giuseppemuntoni\mvc\Model;
  * Class Field
  *
  * @author Giuseppe Muntoni <g.muntoni.cs@gmail.com>
- * @package giuseppemuntoni\mvc\form
+ * @package giuseppemuntoni\mvc\components\form
  */
 class InputField extends BaseField
 {

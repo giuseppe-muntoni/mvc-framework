@@ -26,6 +26,7 @@ class Application
     public Session $session;
     public ?DbModel $user;
     public View $view;
+    public array $config;
 
 
     public function __construct($root_dir, array $config) {
@@ -33,7 +34,10 @@ class Application
         $this->response = new Response();
         $this->router = new Router($this->request, $this->response);
         $this->controller = new Controller();
-        $this->db = new Database($config['db']);
+        if (key_exists('db', $config)) {
+            $this->db = new Database($config['db']);
+        }
+        $this->config = $config;
         $this->session = new Session();
         $this->user = null;
         $this->view = new View();

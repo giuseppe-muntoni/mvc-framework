@@ -21,6 +21,7 @@ abstract class Model
     abstract protected function validationRules(): array;
     abstract public function getDisplayName(): string;
     abstract public function getLabel($attribute): string;
+    abstract public function getLabels(): array;
 
     public function load($data)
     {
