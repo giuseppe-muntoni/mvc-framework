@@ -46,9 +46,8 @@ class InputField extends BaseField
 
     public function renderInput()
     {
-        return sprintf('<input type="%s" class="form-control%s" name="%s" value="%s">',
+        return sprintf('<input type="%s" name="%s" value="%s">',
             $this->type,
-            $this->model->hasError($this->attribute) ? ' is-invalid' : '',
             $this->attribute,
             $this->model->{$this->attribute},
         );

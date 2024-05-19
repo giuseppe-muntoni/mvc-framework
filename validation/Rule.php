@@ -22,7 +22,7 @@ abstract class Rule
         $this->attributeCaption = $attributeCaption;
         $this->value = $value;
 
-        if (empty($customError)) {
+        if (empty($error)) {
             $this->error = $this->defaultError();
         } else {
             $this->error = $error;

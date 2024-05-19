@@ -3,7 +3,7 @@
 namespace giuseppemuntoni\mvc\components\form;
 
 
-use giuseppemuntoni\mvc\form\BaseField;
+use giuseppemuntoni\mvc\components\form\BaseField;
 
 /**
  * Class TextAreaField
@@ -15,8 +15,7 @@ class TextAreaField extends BaseField
 {
     public function renderInput()
     {
-        return sprintf('<textarea class="form-control%s" name="%s">%s</textarea>',
-            $this->model->hasError($this->attribute) ? ' is-invalid' : '',
+        return sprintf('<textarea name="%s">%s</textarea>',
             $this->attribute,
             $this->model->{$this->attribute},
         );
