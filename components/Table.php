@@ -16,22 +16,29 @@ class Table {
      * @var Model[] $datasource
      */
     public array $data;
+    public string $tableId;
+    public string $rowIdAttribute;
     public array $styles;
+    public array $excluded;
 
-    public function __construct(array $data, array $styles = [])
+    public function __construct(array $data, $tableId = "", $rowIdAttribute = "", array $excluded = [], array $styles = [])
     {
+        $this->rowIdAttribute = $rowIdAttribute;
+        $this->tableId = $tableId;
         $this->data = $data;
         $this->styles = $styles;
+        $this->excluded = $excluded;
     }
 
     public function __toString()
     {
-        return sprintf('<table class=\'%s\'>
+        return sprintf('<table id=\'%s\' class=\'%s\'>
                 <tr>
                     %s        
                 </tr>
                     %s
             </table>',
+            $this->tableId,
             implode(" ", $this->styles),
             $this->tableHeaders(),
             $this->tableData()
@@ -42,9 +49,14 @@ class Table {
         if (empty($this->data))
             return '';
 
-        return implode("\n", array_map(function ($label) {
-            return '<th>' . $label . '</th>';
-            }, $this->data[0]->getLabels()));
+        return implode("\n",
+            array_map(function ($attribute) {
+                return sprintf('<th id="%s"> %s </th>', $attribute, $this->data[0]->getLabels()[$attribute]);
+            },
+            array_filter(array_keys($this->data[0]->getLabels()), function ($attribute) {
+                return !in_array($attribute, $this->excluded);
+            })
+        ));
     }
 
     private function tableData(): string {
@@ -52,10 +64,17 @@ class Table {
             return '';
 
         $rows = array_map(function ($row) {
-            $attributes = array_keys($this->data[0]->getLabels());
-            $htmlRow = '<tr>';
+            $attributes = array_filter(array_keys($this->data[0]->getLabels()), function ($attribute) {
+                return !in_array($attribute, $this->excluded);
+            });
+
+            if (empty($this->rowIdAttribute))
+                $htmlRow = '<tr>';
+            else
+                $htmlRow = sprintf('<tr id=\'%s\'>', $row->{$this->rowIdAttribute});
+
             foreach ($attributes as $attribute) {
-                $htmlRow .= '<td>' . $row->{$attribute} . '</td>';
+                $htmlRow .= '<td id="' . $attribute . '">' . $row->{$attribute} . '</td>';
             }
             $htmlRow .= '</tr>';
 
